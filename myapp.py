@@ -17,7 +17,7 @@ st.bar_chart(df)
 
 #Media layout and advanced widgets
 st.sidebar.title("Navigation")
-st.image("E:\genai\scikit.png", caption="Sample Image")
+st.image("scikit.png", caption="Sample Image")
 st.video("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
 
 #file uploading and caching topics
@@ -55,4 +55,5 @@ with st.form("login_form"):
     submitted = st.form_submit_button("Login")
    
     if submitted:
-        st.write(f"Welcome, {username}!")
+
+        st.success(f"Welcome, {username}!")
